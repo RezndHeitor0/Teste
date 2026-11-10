@@ -8,6 +8,15 @@ Aplicativo de console em C# para cadastrar, consultar, atualizar e excluir dados
 - SDK do [.NET 10](https://dotnet.microsoft.com/download/dotnet/10.0).
 - Acesso à internet e ao banco PostgreSQL configurado para o projeto. A tabela `carro` deve existir nesse banco.
 
+Para baixar e instalar o SDK pelo PowerShell com o Windows Package Manager (`winget`), execute:
+
+```powershell
+winget install --id Microsoft.DotNet.SDK.10 --exact
+```
+
+Se o Windows solicitar, confirme a instalação. Depois, feche e abra novamente o terminal.
+Se `winget` não estiver disponível, use o [instalador oficial do .NET 10](https://dotnet.microsoft.com/download/dotnet/10.0).
+
 Para conferir a instalação do .NET, execute no terminal:
 
 ```powershell
@@ -56,4 +65,3 @@ Ao cadastrar ou atualizar, informe os dados solicitados no terminal. As operaç�
 ## Banco de dados
 
 A conexão PostgreSQL é definida em `CarroRepository.cs`. Configure uma conexão válida e confirme que o banco está acessível e contém a tabela `carro` antes de usar as opções do menu que consultam ou alteram dados.
-
