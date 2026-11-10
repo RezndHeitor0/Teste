@@ -56,3 +56,4 @@ Ao cadastrar ou atualizar, informe os dados solicitados no terminal. As operaç�
 ## Banco de dados
 
 A conexão PostgreSQL é definida em `CarroRepository.cs`. Configure uma conexão válida e confirme que o banco está acessível e contém a tabela `carro` antes de usar as opções do menu que consultam ou alteram dados.
+
